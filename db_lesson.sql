@@ -1,3 +1,4 @@
+
 --Q3--
 INSERT INTO departments (name)VALUES
   ('開発'),
@@ -7,7 +8,6 @@ INSERT INTO departments (name)VALUES
 Query OK, 4 rows affected (0.005 sec)
 Records: 4  Duplicates: 0  Warnings: 0
 
---Q2--
 SELECT * FROM departments;
 +---------------+--------------+---------------------+---------------------+
 | department_id | name         | created_at          | updated_at          |
@@ -50,6 +50,7 @@ INSERT INTO reports (person_id,content)VALUES
 Query OK, 10 rows affected (0.005 sec)
 Records: 10  Duplicates: 0  Warnings: 0
 
+--Q4--
  SELECT * FROM people;
 +-----------+------------------------+--------------------------------+---------------+------+--------+---------------------+---------------------+
 | person_id | name                   | email                          | department_id | age  | gender | created_at          | updated_at          |
@@ -201,6 +202,8 @@ ORDER BY
   `created_at`;
   ---「created_at」というカラムの値を使って、作成日時の順に並べて表示させる---
 
+
+--Q7--
 SELECT * FROM people WHERE (gender = 2 AND age BETWEEN 20 AND 29) OR (gender = 1 AND age BETWEEN 40 AND 49);
 +-----------+------------------+---------------------------+---------------+------+--------+---------------------+---------------------+
 | person_id | name             | email                     | department_id | age  | gender | created_at          | updated_at          |
@@ -267,5 +270,3 @@ SELECT people.name,reports.content,departments.name FROM people INNER JOIN repor
 | まだ見ぬ世界 | NULL    |
 +--------------+---------+
 1 row in set (0.000 sec)
-
-MariaDB [db_lesson]>
