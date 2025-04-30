@@ -38,48 +38,30 @@ Records: 10  Duplicates: 0  Warnings: 0
 
 UPDATE people SET department_id = 2 
 WHERE person_id =2;
-Query OK, 1 row affected (0.004 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 UPDATE people SET department_id = 2 
 WHERE person_id =3;
-Query OK, 1 row affected (0.002 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 UPDATE people SET department_id = 2 
 WHERE person_id =4;
-Query OK, 1 row affected (0.004 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 UPDATE people SET department_id = 2 
 WHERE person_id =32;
-Query OK, 1 row affected (0.005 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 UPDATE people SET department_id = 2 
 WHERE person_id =33;
-Query OK, 1 row affected (0.002 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 UPDATE people SET department_id = 2 
 WHERE person_id =34;
-Query OK, 1 row affected (0.058 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 UPDATE people SET department_id = 2 
 WHERE person_id =35;
-Query OK, 1 row affected (0.004 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 UPDATE people SET department_id = 2 
 WHERE person_id =36;
-Query OK, 1 row affected (0.004 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 UPDATE people SET department_id = 1 
 WHERE person_id =37;
-Query OK, 1 row affected (0.004 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
 
 --Q5--
  SELECT name,age FROM people 
